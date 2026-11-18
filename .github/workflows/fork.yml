@@ -35,7 +35,7 @@ jobs:
       check: 'cargo test --locked'
       build: 'cargo build --release --locked --bin dog'
       artifact: target/release/dog
-      smoke: '"$BIN" --version'
+      smoke: '"$BIN" --version | grep "zach fork"'
       targets: >-
         [{"target":"darwin-arm64","os":"macos-latest"},
          {"target":"linux-x64","os":"ubuntu-22.04"}]
