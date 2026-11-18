@@ -122,6 +122,7 @@ fn version_string() -> String {
         ver.push_str(&format!(" [{}]", &feats));
     }
 
+    ver.push_str(" (zach fork)");
     ver
 }
 
